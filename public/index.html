@@ -2,6 +2,7 @@
             .main-container {<!DOCTYPE html>
 <html lang="en">
 <head>
+<script>window.gameState = {};</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>King Chu Bridge Game - REAL Multiplayer Fixed</title>
@@ -953,13 +954,6 @@
     </style>
     <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAACoWZ8PAAAAIElEQVR42mNgwAMmBi4GBgYGIAH8MwMDA8NQApIAiSADAMNfA/zSSpqVAAAAAElFTkSuQmCC">
-
-<script>
-window.generateRoomCode = function() {
-    return Math.random().toString(36).substr(2, 6).toUpperCase();
-};
-</script>
-
 </head>
 <body>
     <!-- Debug Log -->
@@ -1440,7 +1434,7 @@ window.generateRoomCode = function() {
                 return true;
             }
             
-        function _generateRoomCode_old() {
+        function generateRoomCode() {
             const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             let result = '';
             for (let i = 0; i < 6; i++) {
