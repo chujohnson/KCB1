@@ -3,6 +3,12 @@
 <html lang="en">
 <head>
 <script>window.gameState = {};</script>
+<script>
+function generateRoomCode() {
+  return Math.random().toString(36).substring(2, 8).toUpperCase();
+}
+</script>
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
