@@ -1,0 +1,17 @@
+{
+  "name": "king-chu-bridge-server",
+  "version": "1.0.0",
+  "description": "Realtime server for King Chu Bridge (Express + Socket.IO)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
